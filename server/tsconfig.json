@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",                                  
+    "module": "commonjs",                               
+    "rootDir": "./src",                                    
+    "resolveJsonModule": true,                          
+    "allowJs": false,                                    
+    "outDir": "./dist",                                  
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    "strict": true,                                    
+    "noImplicitAny": true,                              
+    "skipLibCheck": true,
+    "removeComments": true                    
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "./**/*.test.ts"
+  ]
+}
