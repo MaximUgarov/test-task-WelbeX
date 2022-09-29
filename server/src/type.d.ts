@@ -1,4 +1,4 @@
-import type { IncomingMessage as Request, ServerResponse as Res } from 'http';
+import type { IncomingMessage as Request, ServerResponse as Res } from "http";
 
 type Query = Record<string, string>
 type Body = Record<string, any>

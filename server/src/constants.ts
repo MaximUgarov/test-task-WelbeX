@@ -1,8 +1,8 @@
 export const databaseConfig = {
-    user: 'postgres',
-    host: 'localhost',
-    database: 'testdb',
-    password: '1212',
+    user: "postgres",
+    host: "localhost",
+    database: "testdb",
+    password: "1212",
     port: 5432
 }
 

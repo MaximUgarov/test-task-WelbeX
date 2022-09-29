@@ -1,11 +1,11 @@
-import { endpoints } from './endpoints';
-import type { Middleware, Req, ResMid } from './type.d';
+import { endpoints } from "./endpoints";
+import type { Middleware, Req, ResMid } from "./type.d";
 import type { ServerResponse as Res } from "http";
 import { createServer } from "http";
 import { addCORS, urlParser, bodyParser } from "./middlewares";
 import { createInterface } from "readline";
-import { createDb, initDb } from './database';
-import { appConfig } from './constants';
+import { createDb, initDb } from "./database";
+import { appConfig } from "./constants";
 
 
 
@@ -42,7 +42,7 @@ function start(): void {
         console.log(`\x1b[32m\n>>>\x1b[0m\t\x1b[33mServer was started on \x1b[32mhttp://localhost:${appConfig.port}\x1b[0m`))
 }
 
-readLine.question("\x1b[32m\n>>>\x1b[0m\tСпросиш шо типа там билдить бд с нуля или она уже есть локально тока на нглиском ?\n\x1b[32m\n>>>\x1b[0m\tY - Yes, N - No ",
+readLine.question("\x1b[32m\n>>>\x1b[0m\tСreate a new database ?\n\x1b[32m\n>>>\x1b[0m\tY - Yes, N - No ",
     async (result: string): Promise<void> => {
         start()
         if (/^y/i.test(result)) {

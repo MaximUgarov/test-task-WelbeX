@@ -1,12 +1,14 @@
 
 # dependencies
-/client/node_modules
-/server/node_modules
+/*/node_modules
 
 # production
 /client/build
 /server/dist
 
+# eslint
+/*/.eslintignore
+/*/.eslintrc
 # misc
 .DS_Store
 .env.local
